@@ -1,0 +1,38 @@
+<%= form_for(@hairstyle) do |f| %>
+  <% if @hairstyle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hairstyle.errors.count, "error") %> prohibited this hairstyle from being saved:</h2>
+
+      <ul>
+      <% @hairstyle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container">
+  <div class="form-group">
+    <%= f.label :stylename %><br>
+    <%= f.text_field :stylename, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :stylistname %><br>
+    <%= f.text_field :stylistname, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :address %><br>
+    <%= f.text_area :address, class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :phonenumber %><br>
+    <%= f.text_field :phonenumber, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: 'btn btn-default' %>
+  </div>
+</div>
+<% end %>

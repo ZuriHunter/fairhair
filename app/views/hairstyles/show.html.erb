@@ -1,0 +1,32 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hair Style Name:</strong>
+  <%= @hairstyle.stylename %>
+</p>
+
+<p>
+  <strong>Stylist Name:</strong>
+  <%= @hairstyle.stylistname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @hairstyle.address %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @hairstyle.phonenumber %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hairstyle.description %>
+</p>
+
+<%= link_to 'Edit', edit_hairstyle_path(@hairstyle), class: 'btn btn-link' %> |
+<%= link_to 'Back', hairstyles_path, class: 'btn btn-link' %>
+  
+</div>

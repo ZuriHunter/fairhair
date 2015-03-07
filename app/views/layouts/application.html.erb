@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @page_title ? @page_title : 'Welcome' %> | Fair Hair</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+   <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+ <style>
+   body{
+    /* background-color: #E7C8E0;*/
+   }
+  </style>
+  
+</head>
+
+  
+  
+<body>
+ <div id="banner-wrap" >
+    <div id=""><!--banner-cover-->
+      <div id=""><!--header-wrap-->
+        <div class="container">
+          <table id="header">
+            <tr>
+              <td id="logo"><span class='wsite-logo'><%= link_to (image_tag 'fairhair.png'), root_path, class: 'img-responsive' %></span></td>
+              <td id="header-right">
+                <div id="nav"><ul class='wsite-menu-default'>
+                    <li id="#"><%= link_to "Our Story",about_index_path %></li>
+                  <li id='#'><%= link_to "Store", products_index_path %></li>
+                  <li id='#'><%= link_to "Find a Style", hairstyles_path %></li>
+                    <li><%= link_to "Contact Us", contact_index_path %></li>  
+                  </ul></div>
+              </td>
+            </tr>
+          </table>
+        </div><!-- end container -->  
+      </div><!--headerwrap-->
+    </div><!--bannercover-->
+  </div><!--bannerwrap-->
+
+  
+<%= yield %>
+ 
+  
+
+
+<div class="container">
+    <%= render 'partials/footer' %>
+  </div>
+
+</body>
+</html>

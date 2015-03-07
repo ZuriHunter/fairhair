@@ -1,0 +1,36 @@
+<div class="container">
+<h1>Listing hairstyles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stylename</th>
+      <th>Stylistname</th>
+      <th>Address</th>
+      <th>Phonenumber</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hairstyles.each do |hairstyle| %>
+      <tr>
+        <td><%= hairstyle.stylename %></td>
+        <td><%= hairstyle.stylistname %></td>
+        <td><%= hairstyle.address %></td>
+        <td><%= hairstyle.phonenumber %></td>
+        <td><%= hairstyle.description %></td>
+        <td><%= link_to 'Show', hairstyle, class:'btn btn-link' %></td>
+        <td><%= link_to 'Edit', edit_hairstyle_path(hairstyle), class:'btn btn-link'  %></td>
+        <td><%= link_to 'Destroy', hairstyle, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-link'  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hairstyle', new_hairstyle_path, class:'btn btn-link'  %>
+  
+</div><!--container-->
