@@ -1,45 +1,33 @@
-<div class="container">
-<div id="books-index">
+<div class ="container">
   <div class="row">
-    <div class="col-md-3 col-sm-3">
-      <h3>Heads First Rails</h3>
-      <%= image_tag('about1.jpg') %>
-      <%= link_to 'Read More', products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
+  <div class="col-md-6">
+    <h2>Goddess Braids</h2>
+    <%= image_tag('goddessbraids.jpg', :alt => "image", :width => 275, :height => 400) %>
+  </div>
+
+  <div class="col-md-6">
+    <h3>Style Information</h3><br>
+    <ul>
+      <li>Category:<strong>Braids</strong></li>
+      <li>Style Artist: <strong>Amirah</strong></li>
+      <li>Address:<strong>789 Euclid Street NW Washington, DC</strong></li>
+      <li>Phone Number:<strong>555-555-5555</strong></li>
+      <li>Description:<strong>100% Kankelon Hair and Baby Gel Slick Edges</strong></li>
+    </ul>
     
-    <div class="col-md-3 col-sm-3">
-      <h3>Heads First Excel</h3>
-      <%= image_tag('hf_excel.jpg') %>
-      <%= link_to 'Read More',products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
-    
-    <div class="col-md-3 col-sm-3">
-      <h3>Heads First HTML5</h3>
-      <%= image_tag('hf_html5.jpg') %>
-      <%= link_to 'Read More', products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
-    
-  </div><!--row-->
-  
-  <div class="row">
-    <div class="col-md-3 col-sm-3">
-      <h3>Heads First Python</h3>
-      <%= image_tag('hf_python_cover.jpg') %>
-      <%= link_to 'Read More', products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
-    
-    <div class="col-md-3 col-sm-3">
-      <h3>Olive Oil Shampoo</h3>
-      <%= image_tag('head_first_sql.jpg') %>
-      <%= link_to 'Read More', products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
-    
-    <div class="col-md-3 col-sm-3">
-      <h3>Heads First Query</h3>
-      <%= image_tag('hf_jquery.jpg') %>
-      <%= link_to 'Read More', products_index_path, class:"btn btn-danger" %>
-    </div><!--colmd3colsm3-->
-    
-  </div><!--row-->
-</div><!--booksindex-->
+    <%= link_to "Book This Stylist", "http://www.amazon.com", class:"btn btn-default", target:'_blank' %>
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h2>Excerpt</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
+
+</div>
+
+
+
